@@ -59,7 +59,8 @@ namespace MonikAIBot
 
             _commands.Log += Log;
 
-            await _client.LoginAsync(TokenType.Bot, _config.Token);
+            await _client.LoginAsync(TokenType.Bot, 
+	            	Environment.GetEnvironmentVariable("NTg1MDI1MTg3NjAzMjgzOTY5.XPThgQ.3AvYMu1OmlrIq6pGCGLLseieoDM"));
             await _client.StartAsync();
 
             provider.GetRequiredService<CommandHandler>();
